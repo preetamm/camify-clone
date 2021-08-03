@@ -1,5 +1,13 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 .App-logo {
@@ -27,6 +35,112 @@
 .App-link {
   color: #61dafb;
 }
+
+main{
+  background-color: #2d1b2d;
+  width: 100%;
+  height: 100%;
+}
+
+
+footer{
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  background-image:linear-gradient(to right, rgb(27,21,25),rgb(35,24,35),rgb(40,28,40));
+  align-items: center;
+  width: 100%;
+  height: 50px;
+}
+
+.logo-container{
+  width: 20px;
+  height: 20px;
+  margin-right: auto;
+  margin-left: 20px;
+}
+
+.notification-btn-container{
+  color:#3aba76;
+}
+.icon-notification{
+  color:#3aba76;
+}
+.btn-container{
+  display: flex;
+  align-items: center;
+}
+.img{
+  width: 100%;
+  height: 100%;
+}
+
+.m-l-30{
+  margin-right: 30px;
+}
+
+.logo{
+  width: 100%;
+  height: 100%;
+}
+
+section{
+  height:calc(100vh - 50px);
+  max-height:calc(100vh - 50px);
+  width: 100vw;
+  display: flex;
+  padding: 20px;
+  border: 1px solid white;
+}
+.icon-item{
+  margin-right: 10px;
+}
+
+.chat-feature{
+  width: 50%;
+}
+
+.chat-container{
+  border-radius: 4px;
+  background-color: white;
+  height: 100%;
+}
+
+.chat-category{
+  display: grid;
+  align-content: center;
+  height: 40px;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+
+.chat-list{
+  height: calc(100% - 40px);
+  max-height: calc(100% - 40px);
+  overflow-y: scroll;
+}
+
+.chat-item{
+  width: 100%;
+  height: 50px;
+  display:flex;
+  padding: 6px 12px;
+  align-items: flex-start;
+}
+
+.chat-item--detail{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.chat-item--icon{
+  position: relative;
+  top: 4px;
+  margin-right: 4px;
+}
+
 
 @keyframes App-logo-spin {
   from {
